@@ -12,7 +12,8 @@ while not acceso_concedido:
             #menu principal
             opcion=input("introduce una opcion: \n""1 Busca id\n"
                                     "2 Remueve usuarios\n"
-                                    "3 Agrega usuarios\n")
+                                    "3 Agrega usuarios\n"
+                                    )
             
             if opcion=="1":
             #buscador de ids
@@ -28,7 +29,9 @@ while not acceso_concedido:
                 #declaro otra variable con nuevos datos items del diccionario para su actualizacion
                 nuevos_datos={ide_nuevo:{"user":usuario_nuevo,"contraseña":contra_nueva}}
                 base_de_datos.update(nuevos_datos)
-                print(base_de_datos)    
+                print(base_de_datos)
+                
+
             elif opcion=="2":
                 #menu 2 remover usuarios nuevos
                 id_borrar=input("introduce el id del usuario que quieres borrar")
