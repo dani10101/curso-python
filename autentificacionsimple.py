@@ -40,31 +40,6 @@ elif opcion=="3":
 
 
 
-
-
-#añado id,user,contraseña al diccio
-# nario base_De_datos
-"""
-id=input("introduce un id válido")
-usuario_nuevo=input("introduce un usuario_valido")
-contrasenia=input("introduce una contraseña para este usuario")
-"""
-#for contrasenias in base_de_datos.get("contraseña")
-    
-
-    #lista_actualizada=lista_credenciales.insert(usuario_nuevo)
-    #id=input("indique el usuario")
-    #print(lista_actualizada)
-#continuo con el flujo del programa pidiendo un alta en el sistema
-"""
-opcion_1=input("quieres añadir un usuario a la base de datos")
-id=input("introduce un id valido a partir de 3")
-"""
-#for usuarios in lista_credenciales:
-#parte de login
-
-
-
     
 
         
