@@ -7,7 +7,7 @@ while not acceso_concedido:
     for datos in base_de_datos.values():
         a=datos["user"]
         b=datos["contraseña"]
-        if a==usuario and b==contrasenia:
+        while a==usuario and b==contrasenia:
             print("accceso concedido")
             #menu principal
             opcion=input("introduce una opcion: \n""1 Busca id\n"
@@ -38,7 +38,7 @@ while not acceso_concedido:
                 if id_borrar in base_de_datos.keys():
                     base_de_datos.pop(id_borrar,"usuario eliminado")
                     print(id_borrar)
-            break
+            
         else:
             print("el usuario con ese id no se ha encontrado")
                 
