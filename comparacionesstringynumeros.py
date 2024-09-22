@@ -11,7 +11,7 @@ def es_palindromo(numero):
     return str(numero) == str(numero)[::-1]
  
 # Ejemplo de uso
-numero = 12321
+numero = 1001
 resultado = es_palindromo(numero)
 print(f"El número {numero} es palíndromo: {resultado}")
 #validar numeros de telefonos:
