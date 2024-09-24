@@ -6,4 +6,4 @@ def solution(number):
         if num % 3==0 or num % 5==0:
             suma+=num
     return suma
-print(solution(23))
+print(solution(10))
