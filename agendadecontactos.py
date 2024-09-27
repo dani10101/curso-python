@@ -5,16 +5,23 @@
 
 def agenda():
     agenda={}
-    print("1.añadir contacto")
+    opciones=          input ("1.añadir contacto\n"
+                        "2.eliminar contacto\n"
+                        "3.salir\n"
+                        "4.menu principal")
+    
     print("2.eliminar contacto")
     print("3 salir")
     #incluir inputs para seleccionar opciones
     opciones = input("introduce una opcion 1 ,2 o 3: ")
     #ejecutamos un bucle condicional para verificar la opcion 1
-    if opciones == "1":
+    while opciones == "1":
         contacto=input("introduce un nombre de contacto")#es un elemento de agenda que posteriormente añadiré
         numero=input("introduce un numero de telefono")
         agenda["contacto"]= contacto
         agenda.update({"numero":numero})
+        opciones= input("desea salir de este menu s o n")
+        opciones="s"
+    
         
 agenda()
