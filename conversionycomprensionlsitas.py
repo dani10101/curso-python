@@ -1,4 +1,4 @@
-estudiantes = [("Alicia", 25), ("Joaquin", 20), ("Carlos", 23), ("David", 22)]
+estudiantes = [("Alicia", 25), ("Joaquin", 20), ("Carlos", 23), ("David", 22)]#lista de tuplas
 ordenar_por_edad = lambda estudiante: estudiante[1]  # Que es la posicion de la edad
 estudiantes.sort(key=ordenar_por_edad)  # Se le da la funcion como argumento para ordenar (callback)
 print(estudiantes)

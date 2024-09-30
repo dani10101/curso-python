@@ -10,18 +10,19 @@ def funcion_suma():
             
 funcion_suma()  
 def suma_hasta_cero():
+    
     suma=[]
+    
     numero=1
+     
     while numero !=0:
         numero = int(input("introduce un numero,0 para finalizar: "))
         suma.append(numero)
+    
     return sum(suma)
+    
 print(suma_hasta_cero())
 
-        
-    
-
-           
 
     
     

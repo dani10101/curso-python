@@ -1,5 +1,19 @@
-conversion= lambda numero_hex: int(numero_hex,16)
-def hex_string_to_rgb(string_hex: str)->dict:
-    rojo,verde,azul = [string_hex[1:3],string_hex[3:5],string_hex[5:]]
-    return {"r": conversion(rojo),"g": conversion(verde),"b": conversion(azul)}
-print(hex_string_to_rgb("FF9913"))   
+
+def rgb(r, g, b):
+    # Función para limitar el valor en el rango de 0 a 255
+    def agrupar(value):
+        return max(0, min(255, value))
+    
+    # Limitar los valores RGB
+    r = agrupar(r)
+    g = agrupar(g)
+    b = agrupar(b)
+    
+    # Convertir a hexadecimal y formatear como dos dígitos
+    return f"{r:02X}{g:02X}{b:02X}"
+
+# Ejemplos de uso
+print(rgb(255, 255, 255))  # "FFFFFF"
+print(rgb(255, 255, 300))  # "FFFFFF"
+print(rgb(0, 0, 0))        # "000000"
+print(rgb(148, 0, 211))    # "9400D3"

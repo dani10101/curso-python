@@ -23,15 +23,16 @@ class cualidades(Personaje):#clase hija
     def __init__(self, nombre):
         super().__init__(nombre)#hereda todas las instancias o atributos del constructor de la clase padre
     def ataque_basico(nombre):
+        
         print(gandalf.nombre,"ha atacado a ",guts.nombre)
         print(gandalf.nombre,"hace un daño de ",gandalf.damage)
     def vida():
         lista_damage_int=[int(i) for i in gandalf.damage]
         guts.puntos_vida-=lista_damage_int[0]
         print(guts.nombre ," tiene" ,guts.puntos_vida, "de vida")
-
         
-    
-ataque_gandalf=cualidades.ataque_basico(gandalf.damage.append(10))
-vida_guts=cualidades.vida()
+        
+cualidades.ataque_basico(gandalf.damage.append(10)) 
+#ataque_gandalf=cualidades.ataque_basico(gandalf.damage.append(10))
+cualidades.vida()
 
