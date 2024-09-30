@@ -15,9 +15,9 @@ def sumarnumerosdicionario(**numeros):#numeros es una variable que usare mas tar
     for numero in numeros.values():#itero sobre los valores del dccionario
         acumulador += numero
     return f"{acumulador}"
-numeros_compuesto= sumarnumerosdicionario(uno=1,dos=2,tres=3)#guardo en esta variable la funcion y sus argumentos en bruto 
+print(sumarnumerosdicionario(uno=1,dos=2,tres=3))#guardo en esta variable la funcion y sus argumentos en bruto 
 #variable = funcion(clave=valor,clave1=valor=1)
-print(numeros_compuesto)#este scope es global por lo tanto el namespace es global
+#este scope es global por lo tanto el namespace es global
 #sintaxis funciones con desempaquetado por dicionario
 print(globals())
 conversion= lambda decimal: hex(decimal)

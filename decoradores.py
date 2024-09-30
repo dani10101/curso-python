@@ -18,7 +18,7 @@ print(sumar(10, 20))
 dt = pendulum.now()
 def decorador_s(string,string_1):#funcion para decorar
     def decorador(func):#
-        def desempaquetar_argumentos(*args,**kwargs):#desempaqueta argumentos de la funcion que usemos para ñadir con el decorador
+        def desempaquetar_argumentos(*args,**kwargs):#desempaqueta argumentos de la funcion que usemos para añadir con el decorador
             print("se va a ejecutar esta funcion",func.__name__, "con lo cual puedo imprimir",string + string_1,"en este momento",dt)#aqui se dice el nombre y la hroa de lafuncion añadida
             
             resultado= func(*args,**kwargs)#aqui se alamcena el desmepaquetado de argumentos del afuncion concatenar
