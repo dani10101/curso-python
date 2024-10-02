@@ -22,6 +22,7 @@ print(sumarnumerosdicionario(uno=1,dos=2,tres=3))#guardo en esta variable la fun
 print(globals())
 conversion= lambda decimal: hex(decimal)
 print(conversion(10))
+#funciones closure
 def funcion_principal(*n):
     return n[0]*n[1]
 def funcion_anidada(func,n):

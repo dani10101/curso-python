@@ -12,8 +12,11 @@ class Personaje:#clase padre
 #@dataclass("Guts":str ,"guerrero":str)
 
 
-
-
+class Asalariado:
+    def __init__(self):
+        self.nombre="DANIEL"
+        self.salario=100
+    def subir_salario():()
 """
 
 class cualidades(Personaje):#clase hija
