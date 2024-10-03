@@ -13,4 +13,3 @@ class calculadora_trig(calculadora):
     def coseno(num1:int):
         return math.cos(num1)
 print(calculadora_trig.suma(3,4))
-from abs import ABS
